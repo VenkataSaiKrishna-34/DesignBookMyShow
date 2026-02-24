@@ -1,0 +1,14 @@
+package org.example.designbookmyshow.model;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+public class Movie extends BaseModel {
+    private String name;
+    private String year;
+    private String genre;
+    private String director;
+    private String rating;
+}
