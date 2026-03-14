@@ -1,15 +1,13 @@
 package org.example.designbookmyshow.repository;
 
-import org.example.designbookmyshow.model.User;
+import org.example.designbookmyshow.model.Show;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
 
 @Repository
-public interface UserRepository extends JpaRepository<User, Long> {
+public interface ShowRepository extends JpaRepository<Show, Long> {
 
-    Optional<User> findByEmail(String email);
-
-    Optional<User> findById(long id);
+    Optional<Show> findById(long id);
 }
